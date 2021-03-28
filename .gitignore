@@ -29,5 +29,11 @@ tensorflow/contrib/cmake/_build/
 *.jpg
 *.xml
 /Hey-Waldo
-/models
+/tensorflow/models
 /mask_rcnn_inception_resnet_v2_1024x1024_coco17_gpu-8
+/tensorflow/protoc
+/tensorflow/cocoapi
+/tensorflow/tf2_api_env
+/tensorflow/workspace/models
+/tensorflow/workspace/pre_trained_models
+/tensorflow/workspace/exported_models
