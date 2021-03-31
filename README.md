@@ -17,17 +17,21 @@ Tensorflow's Object Detection API relies on the trainer to tell it where the obj
 
 - x_min, y_min, x_max and y_max for each bounding box
 
-<mark>TODO: Insert gif of labelimg example**</mark>
+![Labelimg Usage:](https://github.com/scottwilliamhines/here_is_waldo/blob/main/visuals/labelimg_example.gif)
 
 This is important because we will feed this information along with the location information of the original images into our Tensorflow Object Detection API by converting all of that data into a TFRecord file. 
 
 ### Creating a label map and generating the TFrecord
+
 Before we continue onto the next step we have to create a label map, which is essentially the a .txt document with a specific format that lets our API know what to label the inference boxes that it will eventually draw. For my case since I am only training on one object it looks like this:
 
 <code>
     item {
+    
     id: 1
+    
     name: 'waldo'
+    
     } 
 </code>
 
@@ -37,4 +41,46 @@ The last step is feeding all of the data above into the `generate_tfrecord.py` f
 That is it for the data prep!
 
 ### The Fun Stuff
+
+Now we get to pick our model and try to detect Waldo!
+
+I decided to re-train multiple models to see how they would compare. Here are the models that I tried 
+
+**ssd_resnet50_v1_fpn_640x640_coco17_tpu:**
+A Resnet architecture helps deeper nueral networks perform at least as well or better than their shallower counterparts. I was intrigued by the possiblities of more layers and therefore more image manipulations in object detection. This model produced decent results and I was encouraged, but I thought that I could do better. Here are some example detections from the resnet model:
+
+<mark>TODO: add resnet examples</mark>
+
+This being the first model I tried, I wanted to see where I could get with some other CNNs. 
+
+**efficientdet_d0_coco17_tpu:**
+
+EfficientDet is a model developed by the Google Brain team and is their flavor of a Convolutional Neural Network. It has been pre-trained on the ImageNet data set and is fairly usable right out of the box. The main benefit of using EfficientDet is that it is significantly cheaper on computational resources than many of it's counterparts without sacrificing the accuracy of the model. 
+
+<mark>TODO: add efficientdet speed graph</mark>
+
+This model did produce really good results right out of the gate with the smaller Waldo crops, but had a lot of trouble with the larger Waldo images.
+
+This was the total loss over the course of training:
+<p><img src= 'https://github.com/scottwilliamhines/here_is_waldo/blob/main/visuals/efficientdet_d0_v1_tensorboard_visuals/Loss_total_loss.svg'></p>
+
+Here are some of the detections that it made:
+
+<mark>TODO: add waldo image example from efficientdet</mark>
+
+**faster_rcnn_inception_resnet_v2_1024x1024_coco17_tpu-8:**
+
+The third and final model that I trained was an older model and more computationally expensive. The faster_rcnn architechture is all about regionalizing the image and then making classifications on each of those regions. For detection problems like mine it also includes a bounding box around the regions that it classifies. This model utilizes inception_resnet_V2 as well which, as I understand it, runs the image through multiple sizes of convolutions at each layer to help determine where in the image the usable features are and help in the regionalization of the model. 
+
+<mark>TODO: add waldo image example from faster_rcnn</mark>
+
+### Conclusion 
+
+
+
+
+
+
+
+
 
