@@ -55,7 +55,7 @@ A Resnet architecture helps deeper nueral networks perform at least as well or b
 
 <img src="https://github.com/scottwilliamhines/here_is_waldo/blob/main/tensorflow/workspace/exported_images/ssd_resnet_v1/waldo1_predict.png?raw=true"
      alt = "ssd_resnet50 on a small resolution image" 
-     width = "200"/>
+     width = "300"/>
 
 **ssd_resnet50 on a high resolution image**
 
@@ -63,7 +63,7 @@ A Resnet architecture helps deeper nueral networks perform at least as well or b
      alt = "ssd_resnet50 on a high resolution image" 
      width = "800"/>
      
-**ssd_resnet50 on a completely different style of Waldo image from what the model was trained on**
+**ssd_resnet50 on a completely different style of Waldo**
  
  <img src="https://github.com/scottwilliamhines/here_is_waldo/blob/main/tensorflow/workspace/exported_images/ssd_resnet_v1/waldo_predict.png?raw=true"
      alt = "ssd_resnet50 on a completely different style of Waldo image from what the model was trained on" 
@@ -82,7 +82,7 @@ The second model that I trained was an older model and more computationally expe
 
 <img src="https://github.com/scottwilliamhines/here_is_waldo/blob/main/tensorflow/workspace/exported_images/rcnn_inception_resnet_v2/waldo1_rcnn.png?raw=true"
      alt = "Faster RCNN on a small resolution image" 
-     width = "200"/>
+     width = "300"/>
 
 **Faster RCNN on a high resolution image**
 
@@ -90,7 +90,7 @@ The second model that I trained was an older model and more computationally expe
      alt = "Faster RCNN on a high resolution image" 
      width = "800"/>
      
-**Faster RCNN on a completely different style of Waldo image from what the model was trained on**
+**Faster RCNN on a completely different style of Waldo**
  
  <img src="https://github.com/scottwilliamhines/here_is_waldo/blob/main/tensorflow/workspace/exported_images/rcnn_inception_resnet_v2/waldo_rcnn.png?raw=true"
      alt = "Faster RCNN on a completely different style of Waldo image from what the model was trained on" 
@@ -122,7 +122,7 @@ Here are some of the detections that it made:
 
 <img src="https://github.com/scottwilliamhines/here_is_waldo/blob/main/tensorflow/workspace/exported_images/efficientdet_d0_v1/waldo1_efficientdet.png?raw=true"
      alt = "EfficientDet on a small resolution image" 
-     width = "200"/>
+     width = "300"/>
 
 **EfficientDet on a high resolution image**
 
@@ -130,7 +130,7 @@ Here are some of the detections that it made:
      alt = "EfficientDet on a high resolution image" 
      width = "800"/>
      
-**EfficientDet on a completely different style of Waldo image from what the model was trained on**
+**EfficientDet on a completely different style of Waldo**
  
  <img src="https://github.com/scottwilliamhines/here_is_waldo/blob/main/tensorflow/workspace/exported_images/efficientdet_d0_v1/waldo_efficientdet.png?raw=true"
      alt = "EfficientDet on a completely different style of Waldo image from what the model was trained on" 
@@ -146,7 +146,7 @@ Waldo will be found!
 
 <img src="https://github.com/scottwilliamhines/here_is_waldo/blob/main/tensorflow/workspace/exported_images/efficientdet_d0_v1/training_gif.gif?raw=true"
      alt = "Finding Waldo Gif" 
-     width = "200"/>
+     width = "300"/>
 
 
 
