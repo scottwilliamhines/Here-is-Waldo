@@ -53,19 +53,19 @@ A Resnet architecture helps deeper nueral networks perform at least as well or b
 
 <img src="https://github.com/scottwilliamhines/here_is_waldo/blob/main/tensorflow/workspace/exported_images/ssd_resnet_v1/waldo1_predict.png?raw=true"
      alt = "ssd_resnet50 on a small resolution image" 
-     width = "300"/>
+     width = "200"/>
 
 **ssd_resnet50 on a high resolution image**
 
  <img src="https://github.com/scottwilliamhines/here_is_waldo/blob/main/tensorflow/workspace/exported_images/ssd_resnet_v1/waldo108_predict.png?raw=true"
      alt = "ssd_resnet50 on a high resolution image" 
-     width = "300"/>
+     width = "800"/>
      
 **ssd_resnet50 on a completely different style of Waldo image from what the model was trained on**
  
  <img src="https://github.com/scottwilliamhines/here_is_waldo/blob/main/tensorflow/workspace/exported_images/ssd_resnet_v1/waldo_predict.png?raw=true"
      alt = "ssd_resnet50 on a completely different style of Waldo image from what the model was trained on" 
-     width = "300"/>
+     width = "500"/>
 
 
 This being the first model I tried, I wanted to see where I could get with some other CNNs. 
