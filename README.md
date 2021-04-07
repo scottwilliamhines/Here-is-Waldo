@@ -50,13 +50,22 @@ I decided to re-train multiple models to see how they would compare. Here are th
 A Resnet architecture helps deeper nueral networks perform at least as well or better than their shallower counterparts. I was intrigued by the possiblities of more layers and therefore more image manipulations in object detection. This model produced decent results and I was encouraged, but I thought that I could do better. Here are some example detections from the resnet model:
 
 **ssd_resnet50 on a small resolution image**
+
 <img src="https://github.com/scottwilliamhines/here_is_waldo/blob/main/tensorflow/workspace/exported_images/ssd_resnet_v1/waldo1_predict.png?raw=true"
      alt = "ssd_resnet50 on a small resolution image" 
-     width = "100"/>
+     width = "300"/>
 
-![ssd_resnet50 on a high resolution image:](https://github.com/scottwilliamhines/here_is_waldo/blob/main/tensorflow/workspace/exported_images/ssd_resnet_v1/waldo108_predict.png?raw=true)
+**ssd_resnet50 on a high resolution image**
 
-![ssd_resnet50 on a completely different style of Waldo image from what the model was trained on:](https://github.com/scottwilliamhines/here_is_waldo/blob/main/tensorflow/workspace/exported_images/ssd_resnet_v1/waldo_predict.png?raw=true)
+ <img src="https://github.com/scottwilliamhines/here_is_waldo/blob/main/tensorflow/workspace/exported_images/ssd_resnet_v1/waldo108_predict.png?raw=true"
+     alt = "ssd_resnet50 on a high resolution image" 
+     width = "300"/>
+     
+**ssd_resnet50 on a completely different style of Waldo image from what the model was trained on**
+ 
+ <img src="https://github.com/scottwilliamhines/here_is_waldo/blob/main/tensorflow/workspace/exported_images/ssd_resnet_v1/waldo_predict.png?raw=true"
+     alt = "ssd_resnet50 on a completely different style of Waldo image from what the model was trained on" 
+     width = "300"/>
 
 
 This being the first model I tried, I wanted to see where I could get with some other CNNs. 
